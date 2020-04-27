@@ -1,0 +1,104 @@
+.screen {
+    width: 288; 
+    height: 512; 
+    background-image: url(../img/bg_day.png); 
+    position: relative; 
+    z-index: 1;
+    margin: 50% auto;
+    overflow: hidden;
+}
+.bird {
+    width: 48;
+    height: 48;
+    bottom: 100;
+    left: 20;
+    background: url(../img/bird.gif);
+    position: absolute;
+    z-index: 3;
+}
+.logo{
+    width: 178;
+    height: 48;
+    background-image: url(../img/title.png);
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 4;
+    display: block;
+}
+.start{
+    width: 116;
+    height: 70;
+    background-image: url(../img/button_play.png);
+    position: absolute;
+    bottom: 20%;
+    left: 30%;
+    z-index: 4;
+    display: block;
+}
+.end{
+    width: 204;
+    height: 54;
+    background-image: url(../img/text_game_over.png);
+    position: absolute; 
+    z-index: 4;
+    top: 20%;
+    left: 14.6%;
+    display: none;
+}
+.pipe_back{
+    width: 100000;
+    height: 512;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+.pipe{
+    width: 52;
+    height: 512;
+    position: absolute;
+}
+.pipe .top{
+    width: 52;
+    height: 320;
+    position: absolute;
+    top: -220;
+    background: url(../img/pipe_top.png);
+    z-index: 2;
+    left: 0
+}
+.pipe .bottom{
+    width: 52;
+    height: 320;
+    position: absolute;
+    bottom: -220;
+    background: url(../img/pipe_bottom.png);
+    z-index: 2;
+    left: 0
+}
+.score{
+   width: 53;
+   height: 44;
+   position: absolute;
+   top: 5%;
+   right: 3%;
+   z-index: 3;
+   display: none;
+}
+.score .left_score{
+    width: 24;
+    height: 44;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    background: url(../img/font_048.png) no-repeat;
+}
+.score .right_score{
+    width: 24;
+    height: 44;
+    position: absolute;
+    right: 0;
+    z-index: 3;
+    background: url(../img/font_048.png) no-repeat;
+}

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>main game</title>
+        <meta charset="utf-8" />
+        <link href="css/main.css" type="text/css" rel="stylesheet" />
+        <script src = "js/util.js"></script>
+        <script src = "js/param.js"></script>
+        <script src = "js/pipe.js"></script>
+        <script src = "js/bird.js"></script>
+        <script src = "js/score.js"></script>
+        <script src = "js/main.js"></script>
+    </head>
+    <body>
+        <div id="main screen" class="main screen">
+            <div class="logo" id="logo"></div>
+            <div class="start" id="start"></div>
+            <div class="end" id="end"></div>
+            <div class="bird" id="bird"></div>
+            <div class="score" id="score">
+                <div class="left_score" id="left_score"></div>
+                <div class="right_score" id="right_score"></div>
+            </div>
+        </div>
+        <script>
+            window.onload = function(){
+                main.init()
+            }
+        </script>    
+    </body>
+</html>
